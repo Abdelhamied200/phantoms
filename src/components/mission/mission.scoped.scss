@@ -1,0 +1,40 @@
+.mission {
+  max-width: 300px;
+
+  &:hover {
+    .ico {
+      background: #fa311f;
+      color: white;
+      transition: all 400ms ease;
+    }
+  }
+
+  .ico,
+  .title,
+  .desc {
+    margin: 10px 0;
+    color: #4c4d4f;
+  }
+  .ico {
+    margin: 30px auto;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    transition: all 400ms ease;
+  }
+
+  .ico i {
+    width: fit-content;
+    font-size: 36px;
+    margin: auto;
+  }
+  .title p {
+    font-family: "Oswald";
+    font-size: 18px;
+    line-height: 1.66667;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
