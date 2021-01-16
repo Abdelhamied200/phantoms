@@ -1,27 +1,42 @@
+@import "../../styles/mixins";
+
 .mission {
   max-width: 300px;
 
+  @include Hero();
+
   &:hover {
     .ico {
-      background: #fa311f;
       color: white;
-      transition: all 400ms ease;
     }
+    .ico::after {
+      transform: scale(1);
+      transform-origin: center;
+    }
+  }
+  .ico::after {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: 36.5%;
+    width: 80px;
+    height: 80px;
+    transform: scale(0);
+    border-radius: 40px;
+    background: #fa311f;
+    transition: all 200ms ease;
+    z-index: -1;
   }
 
   .ico,
   .title,
   .desc {
     margin: 10px 0;
-    color: #4c4d4f;
   }
   .ico {
+    position: relative;
     margin: 30px auto;
-    border-radius: 40px;
-    width: 80px;
-    height: 80px;
     display: flex;
-    transition: all 400ms ease;
   }
 
   .ico i {
@@ -29,12 +44,11 @@
     font-size: 36px;
     margin: auto;
   }
-  .title p {
+  .title h5 {
     font-family: "Oswald";
-    font-size: 18px;
-    line-height: 1.66667;
-    font-weight: 500;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
+  }
+  .desc p {
+    line-height: 1.6;
   }
 }

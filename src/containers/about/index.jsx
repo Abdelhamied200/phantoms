@@ -8,15 +8,15 @@ const About = (props) => {
   return (
     <section className="about">
       <div className="title">
-        <h1>About</h1>
+        <h1 className="section-title">About</h1>
         <div className="pic">
           <img src={aboutPic} alt="" />
         </div>
       </div>
       <div className="content">
-        <div className="subTitle">About Us</div>
+        <sub>About Us</sub>
         <div className="secTitle">
-          <h2>#1 basketball club</h2>
+          <h3>#1 basketball club</h3>
         </div>
         <div className="desc">
           <p className="bold">

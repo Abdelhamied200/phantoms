@@ -9,7 +9,7 @@ const Mission = ({ ico, title, desc }) => {
         <i className={`fas fa-${ico}`} />
       </div>
       <div className="title">
-        <p>{title}</p>
+        <h5 className="hero5">{title}</h5>
       </div>
       <div className="desc">
         <p>{desc}</p>

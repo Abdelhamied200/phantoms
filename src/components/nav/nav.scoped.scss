@@ -1,11 +1,24 @@
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  position: fixed;
-  width: calc(100vw - 140px);
+  box-sizing: border-box;
+  z-index: 30;
+  width: calc(100vw - 17px);
+  padding: 20px 120px;
+  margin-left: -60px;
+  margin-top: -20px;
+  transition: all 0.2s ease-in-out;
+  height: 120px;
+
   .logo {
+    position: absolute;
+    left: 120px;
+    top: 0px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 20%;
     img {
       width: 150px;
     }
@@ -13,9 +26,9 @@ nav {
 
   .list {
     position: absolute;
-    top: -120px;
-    left: -60px;
-    width: 100vw;
+    top: -100px;
+    left: 0;
+    width: calc(100vw - 17px);
     height: 100vh;
     background-color: rgba($color: #111, $alpha: 0.9);
     z-index: -1;

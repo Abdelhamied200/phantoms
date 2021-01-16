@@ -1,48 +1,39 @@
+@import "../../styles/mixins";
+
 header {
   position: relative;
   background: url("../../assets/pics/home01.jpg");
   background-size: cover;
   min-height: 100vh;
   padding: 20px 60px;
+  padding-bottom: 60px;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
 
   .content {
     margin: auto 250px;
-    margin-top: 160px;
+    margin-top: 80px;
     max-width: 570px;
-    h4,
-    h1,
-    p {
-      text-align: left;
-      color: white;
-    }
-    h1 {
-      line-height: 140px;
-    }
-    p.desc {
-      margin-top: 20px;
-      font-weight: 300;
-      letter-spacing: 0.7px;
-    }
+    text-align: left;
+    color: white;
+
+    @include Hero("dark");
+
     .quote {
       .offMarg {
         margin-left: -90px;
       }
       h1 {
-        font-family: "Oswald";
         font-size: 144px;
-        text-transform: uppercase;
-        font-weight: 500;
+        font-family: "Oswald";
+        letter-spacing: 0;
       }
-      h4 {
-        font-family: "Montserrat";
+      h2 {
         font-size: 64px;
         font-weight: 200;
+        letter-spacing: 0;
         text-transform: capitalize;
-        &.colored {
-          color: #fa311f;
-        }
       }
       .comp {
         display: flex;
@@ -50,6 +41,9 @@ header {
           margin: 15px;
         }
       }
+    }
+    p.desc {
+      margin-top: 20px;
     }
   }
 }

@@ -9,14 +9,14 @@ const Season = (props) => {
       <div className="content">
         <div className="row">
           <p className="small">season</p>
-          <h1>2020</h1>
-          <h3 className="bold">
+          <h1 className="hero1">2020</h1>
+          <h3>
             we
             <br />
             create
           </h3>
         </div>
-        <h1 className="colored">New stars</h1>
+        <h1 className="hero3 colored">New stars</h1>
         <Btn link to="#">
           Join Now
         </Btn>

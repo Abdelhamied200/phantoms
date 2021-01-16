@@ -10,11 +10,11 @@ const Header = (props) => {
       <Nav />
       <div className="content">
         <div className="quote">
-          <h4>the lifestyle</h4>
+          <h2 className="hero2">the lifestyle</h2>
           <h1 className="offMarg">that keeps</h1>
           <div className="comp">
             <h1>you</h1>
-            <h4 className="colored">Energized</h4>
+            <h2 className="hero2 colored">Energized</h2>
           </div>
         </div>
         <p className="desc">

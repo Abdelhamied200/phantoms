@@ -1,5 +1,12 @@
+@import "./styles/mixins";
+
 .App {
   text-align: center;
+}
+
+q::before,
+q::after {
+  content: "";
 }
 
 ul,
@@ -21,7 +28,8 @@ nav ul {
   }
 }
 
-a {
+a,
+img {
   display: block;
 }
 

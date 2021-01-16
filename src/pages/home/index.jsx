@@ -1,6 +1,8 @@
 import React from "react";
 import About from "../../containers/about";
+import Gallery from "../../containers/gallery";
 import Missions from "../../containers/missions";
+import Quote from "../../containers/quote";
 import Season from "../../containers/season";
 
 const Home = (props) => {
@@ -10,6 +12,8 @@ const Home = (props) => {
         <About />
         <Season />
         <Missions />
+        <Gallery />
+        <Quote />
       </div>
     </div>
   );

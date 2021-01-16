@@ -1,8 +1,13 @@
+@import "../../styles/mixins";
+
 section.season {
   background: url("../../assets/pics/home03.jpg");
   background-size: cover;
   height: 350px;
   display: flex;
+
+  @include Hero("dark");
+
   .content {
     max-width: 60%;
     margin: auto 0;
@@ -12,11 +17,8 @@ section.season {
     p,
     h1,
     h3 {
-      color: white;
       text-align: left;
       font-family: "Oswald";
-      text-transform: uppercase;
-      font-weight: 500;
       margin: 5px 10px;
     }
     .row {
@@ -32,23 +34,17 @@ section.season {
       }
 
       h1 {
-        font-size: 144px;
-        line-height: 0.925;
         text-transform: uppercase;
         letter-spacing: 0;
       }
       h3 {
-        font-size: 28px;
-        line-height: 1.33333;
         text-transform: uppercase;
         letter-spacing: 0.1em;
       }
     }
     h1.colored {
-      font-size: 96px;
       line-height: 1;
       letter-spacing: 0.1em;
-      color: #fa311f;
     }
   }
 }
