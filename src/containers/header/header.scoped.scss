@@ -11,6 +11,10 @@ header {
   display: flex;
   flex-direction: column;
 
+  .btn {
+    margin-top: 50px;
+  }
+
   .content {
     margin: auto 250px;
     margin-top: 80px;

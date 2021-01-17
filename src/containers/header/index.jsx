@@ -22,9 +22,11 @@ const Header = (props) => {
           the best gear, and specialized skill development in all areas of the
           game.
         </p>
-        <Btn link to="/">
-          read more
-        </Btn>
+        <div className="btn">
+          <Btn link to="/">
+            read more
+          </Btn>
+        </div>
       </div>
     </header>
   );
