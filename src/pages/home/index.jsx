@@ -1,6 +1,7 @@
 import React from "react";
 import About from "../../containers/about";
 import Events from "../../containers/events";
+import Footer from "../../containers/footer";
 import Gallery from "../../containers/gallery";
 import Missions from "../../containers/missions";
 import NextGame from "../../containers/nextGame";
@@ -20,6 +21,7 @@ const Home = (props) => {
         <NextGame />
         <Events />
         <Partners />
+        <Footer />
       </div>
     </div>
   );
