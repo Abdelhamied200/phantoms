@@ -4,6 +4,7 @@ import Events from "../../containers/events";
 import Gallery from "../../containers/gallery";
 import Missions from "../../containers/missions";
 import NextGame from "../../containers/nextGame";
+import Partners from "../../containers/partners";
 import Quote from "../../containers/quote";
 import Season from "../../containers/season";
 
@@ -18,6 +19,7 @@ const Home = (props) => {
         <Quote />
         <NextGame />
         <Events />
+        <Partners />
       </div>
     </div>
   );
