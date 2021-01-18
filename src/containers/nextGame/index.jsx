@@ -29,7 +29,7 @@ const NextGame = (props) => {
             <p>7:00 PM</p>
           </div>
           <div id="buy">
-            <Btn link to="/">
+            <Btn link="true" to="/">
               Buy Tickets
             </Btn>
           </div>

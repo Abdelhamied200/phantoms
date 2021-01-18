@@ -94,7 +94,7 @@
     }
   }
   .hero2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 1;
     @media (min-width: 576px) {
@@ -137,5 +137,15 @@
     z-index: -1;
     letter-spacing: 0;
     font-weight: 900;
+
+    @media (max-width: 576px) {
+      font-size: 90px;
+    }
+    @media (max-width: 992px) {
+      font-size: 150px;
+    }
+    @media (max-width: 1200px) {
+      font-size: 200px;
+    }
   }
 }

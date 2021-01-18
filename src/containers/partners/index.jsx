@@ -12,6 +12,15 @@ const Partners = (props) => {
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 480, // mobile breakpoint
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <section className="partners">

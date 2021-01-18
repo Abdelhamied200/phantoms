@@ -3,7 +3,8 @@
 
 section.next-game {
   background: center url("../../assets/pics/home05.jpg");
-  height: 400px;
+  background-size: cover;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   .content {
@@ -20,9 +21,13 @@ section.next-game {
   h2 {
     font-family: "Oswald";
   }
+  @media (max-width: 1100px) {
+    //
+  }
 
   .row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
   }

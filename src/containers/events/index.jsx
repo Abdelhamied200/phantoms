@@ -35,8 +35,8 @@ const Events = (props) => {
       <h1 className="section-title">EVENTS</h1>
       <h3 className="title">UPCOMING EVENTS</h3>
       <div className="row">
-        {eves.map((eve) => (
-          <Event {...eve} />
+        {eves.map((eve, i) => (
+          <Event {...eve} key={i} />
         ))}
       </div>
     </section>

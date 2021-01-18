@@ -10,11 +10,11 @@ const Header = (props) => {
       <Nav />
       <div className="content">
         <div className="quote">
-          <h2 className="hero2">the lifestyle</h2>
-          <h1 className="offMarg">that keeps</h1>
+          <h2 className="hero3">the lifestyle</h2>
+          <h1 className="offMarg hero1">that keeps</h1>
           <div className="comp">
-            <h1>you</h1>
-            <h2 className="hero2 colored">Energized</h2>
+            <h1 className="hero1">you</h1>
+            <h3 className="hero3 colored">Energized</h3>
           </div>
         </div>
         <p className="desc">
@@ -23,7 +23,7 @@ const Header = (props) => {
           game.
         </p>
         <div className="btn">
-          <Btn link to="/">
+          <Btn link="true" to="/">
             read more
           </Btn>
         </div>

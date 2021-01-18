@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./social.scoped.scss";
 
@@ -19,10 +20,10 @@ const Social = ({ to, type }) => {
       return;
   }
 };
-const fb = <a className="social-link icon fab fa-facebook-f" href={"#"} />;
-const gp = <a className="social-link icon fab fa-google-plus-g" href={"#"} />;
-const pt = <a className="social-link icon fab fa-pinterest-p" href={"#"} />;
-const tw = <a className="social-link icon fab fa-twitter" href={"#"} />;
-const yt = <a className="social-link icon fab fa-youtube" href={"#"} />;
+const fb = <Link className="social-link icon fab fa-facebook-f" to={"/"} />;
+const gp = <Link className="social-link icon fab fa-google-plus-g" to={"/"} />;
+const pt = <Link className="social-link icon fab fa-pinterest-p" to={"/"} />;
+const tw = <Link className="social-link icon fab fa-twitter" to={"/"} />;
+const yt = <Link className="social-link icon fab fa-youtube" to={"/"} />;
 
 export default Social;

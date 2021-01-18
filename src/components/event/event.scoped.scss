@@ -3,6 +3,7 @@
 
 .event {
   @include Hero();
+  margin: 10px;
 
   h5 {
     font-family: "Oswald";

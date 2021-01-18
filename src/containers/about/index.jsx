@@ -32,7 +32,7 @@ const About = (props) => {
             with victory and success but also with losing and failure.
           </p>
         </div>
-        <Btn className="dark" link to="#">
+        <Btn className="dark" link="true" to="#">
           Read More
         </Btn>
       </div>

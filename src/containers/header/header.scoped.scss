@@ -4,8 +4,9 @@ header {
   position: relative;
   background: url("../../assets/pics/home01.jpg");
   background-size: cover;
+  background-position: right;
   min-height: 100vh;
-  padding: 20px 60px;
+  padding: 20px 8vw;
   padding-bottom: 60px;
   box-sizing: border-box;
   display: flex;
@@ -16,25 +17,34 @@ header {
   }
 
   .content {
-    margin: auto 250px;
-    margin-top: 80px;
+    margin: auto 15vw;
+    margin-top: 120px;
     max-width: 570px;
     text-align: left;
     color: white;
+
+    @media (max-width: 992px) {
+      margin: auto 0;
+
+      .quote {
+        h1.offMarg {
+          margin-left: -4vw;
+        }
+      }
+    }
 
     @include Hero("dark");
 
     .quote {
       .offMarg {
-        margin-left: -90px;
+        margin-left: -9vw;
       }
       h1 {
-        font-size: 144px;
         font-family: "Oswald";
         letter-spacing: 0;
       }
-      h2 {
-        font-size: 64px;
+      h2,
+      h3 {
         font-weight: 200;
         letter-spacing: 0;
         text-transform: capitalize;

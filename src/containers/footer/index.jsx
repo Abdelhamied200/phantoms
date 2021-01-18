@@ -54,7 +54,7 @@ const Footer = (props) => {
             <div className="newsletter">
               <input type="email" placeholder="Email" />
               <div className="btn">
-                <Btn link to="/">
+                <Btn link="true" to="/">
                   Subscribe Now
                 </Btn>
               </div>

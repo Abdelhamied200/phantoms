@@ -17,9 +17,11 @@ const Season = (props) => {
           </h3>
         </div>
         <h1 className="hero3 colored">New stars</h1>
-        <Btn link to="#">
-          Join Now
-        </Btn>
+        <div className="btn">
+          <Btn link="true" to="#">
+            Join Now
+          </Btn>
+        </div>
       </div>
     </section>
   );
